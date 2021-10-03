@@ -1,0 +1,9 @@
+syntax="proto3";
+option java_package = "com.github.capture.model";
+
+message TcpPacket{
+	fixed64 ts=1;
+	fixed32 nanos=2;
+	int32 packet_len=3;
+	bytes raw_data=4;
+}
